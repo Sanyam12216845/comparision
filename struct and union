@@ -1,0 +1,25 @@
+#include<iostream>
+using namespace std;
+
+union union_product
+{
+  int productid;
+  char name[20];
+  float price;
+};
+
+struct struct_product
+{
+  int productid;
+  char name[20];
+  float price;
+};
+
+int main()
+{
+  union union_product union_obj;
+  struct struct_product struct_obj;
+  cout << "Size of union object: " << sizeof(union_obj) << endl;
+  cout << "Size of structure object: " << sizeof(struct_obj);
+  return 0;
+}
